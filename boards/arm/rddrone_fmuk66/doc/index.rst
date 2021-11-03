@@ -6,10 +6,16 @@ NXP RDDRONE-FMUK66
 Overview
 ********
 
-The RDDRONE FMUK66 is an drone control board with commonly used peripheral
-connectors and a Kinetis K66 on board.
+The RDDRONE FMUK66 is primarily designed as an autonomous drone "Flight Management Unit" control board which incorporates DroneCode standard commonly used peripheral
+connectors. The MCU onboard is a Kinetis K66. The FMUK66 hardware includes onboard IMU (Intertial measurement units), Ports for off the shelf GPS modules with integrated arming swtiches, LEDs and enunciators, SDCARD for logging, CAN ports, PWM ports, 100BaseT1 "2-wire" Ethernet, and SE050 Secure Element. 
 
-- Comes with a J-Link Edu Mini for programming and UART console.
+Note that historically this board is supported by another RTOS, NuttX, and the PX4 flight stack running on top, and can fly Multicopters, VTOL and traditional Aircraft, ground based rovers and water going vessels. 
+The intention here is to have a functional port to Zephyr RTOS so that experimentation and development of flight/Vehicle stacks can also begin with Zephyr.
+The FMUK66 hardware is suitable for use in other mobile robotics applications, or simply as hardware where where CAN, T1 Ethernet, or Secure development is needed.
+
+- The RDDRONE-FMUK66 kit comes with a J-Link Edu Mini for programming and UART console as well as a power distribution and measuring module as well as a GPS.
+- NXP KIT-HGDRONEK66 is a complete quadcopter drone kit that incorporates the RDDRONE-FMUK66
+- NXP BUGGY3-KIT is a complete "RC CAR" buggy chassis that incorporates the RDDRONE-FMUK66
 
 .. image:: ./rddrone_fmuk66.jpg
    :width: 720px
